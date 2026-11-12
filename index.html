@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DMMMSU Campus Notices</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+
+    <header class="header">
+        <img src="Logo.png" class="logo" alt="DMMMSU Logo">
+        <h1>Don Mariano Marcos Memorial State University</h1>
+    </header>
+
+    <nav class="navbar">
+        <a href="index.html">HOME</a>
+        <a href="#">ABOUT</a>
+        <a href="#">CONTACT US</a>
+    </nav>
+
+    <main class="content">
+        <h2>CAMPUS NOTICE</h2>
+
+        <div class="images">
+            <img src="pilipinas.jpeg" alt="Image 1">
+            <img src="Pink_flower.jpg" alt="Image 2">
+            <img src="OIP.webp" alt="Image 3">
+        </div>
+    </main>
+
+    <aside class="right">
+        
+        <form action="/api/notices" method="post">
+
+            <label for="title">Title</label>
+            <input id="title"
+                   name="title"
+                   type="text"
+                   required>
+
+            <label for="msg">Message</label>
+            <textarea id="msg"
+                      name="message"
+                      required></textarea>
+
+            <button type="submit">Post Notice</button>
+
+        </form>
+    </main>
+
+    <aside></aside>
+
+    <footer>  College of Computer Science</footer>
+
+</body>
+</html>
